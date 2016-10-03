@@ -1,15 +1,22 @@
 package baja.oop1.lesson3;
 
 import baja.oop1.lesson3.network.NetworkRunner;
+import baja.oop1.lesson3.ships.ShipGame;
 import baja.oop1.lesson3.wg.WgRunner;
 
 public class Main {
 	public static void main(String[] args){
 		Main main = new Main();
-		main.runWg();
-		main.runNetwork();
+//		main.runWg();
+//		main.runNetwork();
+		main.startShipGame();
 	}
 	
+	
+	public void startShipGame(){
+		ShipGame sg = new ShipGame();
+		sg.start();
+	}
 	
 	public void runNetwork(){
 		System.out.println("RUNNING NETWORK TRACE 1 ********************");
