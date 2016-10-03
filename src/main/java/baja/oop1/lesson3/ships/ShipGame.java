@@ -31,7 +31,7 @@ public class ShipGame {
 		try(Scanner in = new Scanner(System.in)){
 			String input; 
 			while(!allShipsDead()){
-				System.out.println("Plase provide ccordinates to shoot in one of formats: x:y , x y");
+				System.out.println("Plase provide coordinates to shoot in one of formats: x:y , x y");
 				System.out.print("> ");
 				input = in.next();
 				if ( input != null && !input.isEmpty() && input.equals("exit")){
